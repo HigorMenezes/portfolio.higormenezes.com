@@ -2,18 +2,22 @@ import Link, { LinkProps } from "next/link";
 
 import styles from "./styles.module.scss";
 
-interface LinkItemProps extends LinkProps {
+interface NavigationItemProps extends LinkProps {
   active: boolean;
   children: JSX.Element | JSX.Element[] | string;
 }
 
-function LinkItem({ active, children, ...rest }: LinkItemProps): JSX.Element {
+function NavigationItem({
+  active,
+  children,
+  ...rest
+}: NavigationItemProps): JSX.Element {
   const getClassName = () => {
     if (active) {
-      return `${styles.linkItem} ${styles.active}`;
+      return `${styles.navigationItem} ${styles.active}`;
     }
 
-    return styles.linkItem;
+    return styles.navigationItem;
   };
 
   return (
@@ -23,4 +27,4 @@ function LinkItem({ active, children, ...rest }: LinkItemProps): JSX.Element {
   );
 }
 
-export default LinkItem;
+export default NavigationItem;
