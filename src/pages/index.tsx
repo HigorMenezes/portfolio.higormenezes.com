@@ -1,5 +1,6 @@
 import SEO from "../components/SEO";
 import Main from "../components/Main";
+import Introduction from "../components/Introduction";
 
 export default function Home(): JSX.Element {
   return (
@@ -9,9 +10,7 @@ export default function Home(): JSX.Element {
         description="Portfolio of Higor Menezes, a web developer"
       />
       <Main>
-        <p>Hi,</p>
-        <p>I&rsquo;m Higor</p>
-        <p>a WEB developer</p>
+        <Introduction />
       </Main>
     </>
   );

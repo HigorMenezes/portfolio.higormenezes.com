@@ -1,0 +1,39 @@
+.container {
+}
+
+.text {
+  margin: 0;
+  animation: fadeIn 1s;
+  animation-fill-mode: both;
+}
+
+.greetings {
+  font-size: 48px;
+  color: var(--text-color);
+  animation-delay: 0.25s;
+}
+
+.who {
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--text-color);
+  animation-delay: 1s;
+}
+
+.role {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--sub-text-color);
+  animation-delay: 1.75s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
