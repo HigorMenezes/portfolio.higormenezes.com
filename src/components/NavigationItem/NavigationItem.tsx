@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import Link, { LinkProps } from "next/link";
 
 import styles from "./styles.module.scss";
@@ -12,17 +13,17 @@ function NavigationItem({
   children,
   ...rest
 }: NavigationItemProps): JSX.Element {
-  const getClassName = () => {
+  const className = useMemo(() => {
     if (active) {
       return `${styles.navigationItem} ${styles.active}`;
     }
 
     return styles.navigationItem;
-  };
+  }, [active]);
 
   return (
     <Link {...rest}>
-      <a className={getClassName()}>{children}</a>
+      <a className={className}>{children}</a>
     </Link>
   );
 }
