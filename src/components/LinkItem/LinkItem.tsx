@@ -3,13 +3,22 @@ import Link, { LinkProps } from "next/link";
 import styles from "./styles.module.scss";
 
 interface LinkItemProps extends LinkProps {
+  active: boolean;
   children: JSX.Element | JSX.Element[] | string;
 }
 
-function LinkItem({ children, ...rest }: LinkItemProps): JSX.Element {
+function LinkItem({ active, children, ...rest }: LinkItemProps): JSX.Element {
+  const getClassName = () => {
+    if (active) {
+      return `${styles.linkItem} ${styles.active}`;
+    }
+
+    return styles.linkItem;
+  };
+
   return (
     <Link {...rest}>
-      <a className={styles.linkItem}>{children}</a>
+      <a className={getClassName()}>{children}</a>
     </Link>
   );
 }

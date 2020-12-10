@@ -4,9 +4,10 @@ export default function Home(): JSX.Element {
   return (
     <>
       <SEO
-        title="Higor Menezes | Portfolio"
-        description="Portfolio of Higor Menezes, a web developer"
+        title="Higor Menezes | Projects"
+        description="Higor Menezes Projects"
       />
+      <h1>Projects</h1>
     </>
   );
 }

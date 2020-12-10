@@ -31,10 +31,20 @@
     color: var(--text-color);
   }
 
+  &:focus {
+    outline: thin dotted;
+  }
+
   &:hover::after,
   &:active::after,
   &:focus::after {
     width: 100%;
     background-color: var(--text-color);
+  }
+}
+
+.active {
+  &::after {
+    width: 50%;
   }
 }

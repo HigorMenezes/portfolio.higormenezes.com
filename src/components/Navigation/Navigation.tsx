@@ -1,19 +1,29 @@
+import { useRouter } from "next/router";
+
 import LinkItem from "../LinkItem";
 
 import styles from "./styles.module.scss";
 
 function Navigation(): JSX.Element {
+  const { pathname } = useRouter();
+
   return (
     <nav className={styles.nav}>
       <ul>
         <li>
-          <LinkItem href="/">Home</LinkItem>
+          <LinkItem href="/" active={pathname === "/"}>
+            Home
+          </LinkItem>
         </li>
         <li>
-          <LinkItem href="/skills">Skills</LinkItem>
+          <LinkItem href="/skills" active={pathname === "/skills"}>
+            Skills
+          </LinkItem>
         </li>
         <li>
-          <LinkItem href="/projects">Projects</LinkItem>
+          <LinkItem href="/projects" active={pathname === "/projects"}>
+            Projects
+          </LinkItem>
         </li>
       </ul>
     </nav>
