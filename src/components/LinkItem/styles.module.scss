@@ -1,0 +1,40 @@
+.linkItem {
+  position: relative;
+
+  padding: 10px 2px;
+  margin: 0px 10px;
+
+  cursor: pointer;
+
+  color: var(--sub-text-color);
+  font-weight: bold;
+
+  transition: color var(--transition-time);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    transform: translateX(-50%);
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--sub-text-color);
+
+    transition: width var(--transition-time);
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--text-color);
+  }
+
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    width: 100%;
+    background-color: var(--text-color);
+  }
+}
