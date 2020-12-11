@@ -6,13 +6,16 @@ function Introduction(): JSX.Element {
   return (
     <div className={styles.container}>
       <div className={styles.greetingContent}>
-        <p className={`${styles.animationRight} ${styles.greetings}`}>Hi,</p>
-        <p className={`${styles.animationRight} ${styles.who}`}>
-          I&rsquo;m Higor,
-        </p>
-        <p className={`${styles.animationRight} ${styles.role}`}>
-          a WEB developer
-        </p>
+        <div className={styles.greeting}>
+          <p className={`${styles.animationRight} ${styles.hi}`}>Hi,</p>
+          <p className={`${styles.animationRight} ${styles.who}`}>
+            I&rsquo;m Higor,
+          </p>
+          <p className={`${styles.animationRight} ${styles.role}`}>
+            a web developer
+          </p>
+        </div>
+
         <div className={`${styles.animationBottom} ${styles.contact}`}>
           <a
             className={styles.contactAnchor}
