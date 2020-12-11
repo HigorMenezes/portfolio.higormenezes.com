@@ -53,7 +53,7 @@
   }
 
   &:focus {
-    outline: thin dotted;
+    outline: thin dotted var(--primary-color);
   }
 }
 
@@ -91,40 +91,6 @@
   font-weight: 500;
   color: var(--sub-text-color);
   animation-delay: 0.75s;
-}
-
-.animationRight {
-  animation-name: fadeInRight;
-  animation-duration: 0.75s;
-  animation-fill-mode: both;
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-.animationBottom {
-  animation-name: fadeInBottom;
-  animation-duration: 0.75s;
-  animation-fill-mode: both;
-}
-
-@keyframes fadeInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
 }
 
 @media (min-width: 780px) {
