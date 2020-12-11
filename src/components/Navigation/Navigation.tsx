@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-import LinkItem from "../NavigationItem";
+import NavigationItem from "../NavigationItem";
 
 import styles from "./styles.module.scss";
 
@@ -11,19 +11,19 @@ function Navigation(): JSX.Element {
     <nav className={styles.nav}>
       <ul>
         <li>
-          <LinkItem href="/" active={pathname === "/"}>
+          <NavigationItem href="/" active={pathname === "/"}>
             Home
-          </LinkItem>
+          </NavigationItem>
         </li>
         <li>
-          <LinkItem href="/skills" active={pathname === "/skills"}>
+          <NavigationItem href="/skills" active={pathname === "/skills"}>
             Skills
-          </LinkItem>
+          </NavigationItem>
         </li>
         <li>
-          <LinkItem href="/projects" active={pathname === "/projects"}>
+          <NavigationItem href="/projects" active={pathname === "/projects"}>
             Projects
-          </LinkItem>
+          </NavigationItem>
         </li>
       </ul>
     </nav>
