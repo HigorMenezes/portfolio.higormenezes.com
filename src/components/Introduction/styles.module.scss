@@ -33,7 +33,7 @@
 
 .contactAnchor {
   width: fit-content;
-  color: var(--sub-primary-color);
+  color: var(--primary-color);
 
   margin: 5px;
   font-size: 16px;
@@ -42,8 +42,6 @@
   display: flex;
   align-items: center;
 
-  transition: color var(--transition-time);
-
   & > *:not(:last-child) {
     margin-right: 5px;
   }
@@ -51,7 +49,6 @@
   &:hover,
   &:active,
   &:focus {
-    color: var(--primary-color);
     text-decoration: underline;
   }
 
