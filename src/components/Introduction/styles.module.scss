@@ -1,33 +1,96 @@
 .container {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  column-gap: 10px;
 }
 
-.text {
-  margin: 0;
-  animation: fadeIn 1s;
-  animation-fill-mode: both;
+.greetingContent {
+  width: fit-content;
+  margin-bottom: 25px;
+}
+
+.contact {
+  margin-top: 25px;
+  animation-delay: 1s;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contactAnchor {
+  width: fit-content;
+  color: var(--sub-primary-color);
+
+  margin: 5px;
+  font-size: 16px;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+
+  transition: color var(--transition-time);
+
+  & > *:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: thin dotted;
+  }
+}
+
+.aboutContent {
+  width: fit-content;
+  animation-delay: 1s;
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--sub-text-color);
+    text-align: justify;
+  }
 }
 
 .greetings {
+  margin: 0;
   font-size: 48px;
   color: var(--text-color);
   animation-delay: 0.25s;
 }
 
 .who {
+  margin: 0;
   font-size: 52px;
   font-weight: 700;
   color: var(--text-color);
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 .role {
+  margin: 0;
   font-size: 24px;
   font-weight: 500;
   color: var(--sub-text-color);
-  animation-delay: 1.75s;
+  animation-delay: 0.75s;
 }
 
-@keyframes fadeIn {
+.animationRight {
+  animation-name: fadeInRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInRight {
   0% {
     opacity: 0;
     transform: translateX(10px);
@@ -35,5 +98,34 @@
   100% {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+.animationBottom {
+  animation-name: fadeInBottom;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media (min-width: 780px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .greetingContent {
+    width: fit-content;
+    margin-top: 25px;
   }
 }

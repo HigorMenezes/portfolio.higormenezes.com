@@ -1,6 +1,9 @@
 :root {
-  --text-color: #2b2b2b;
-  --sub-text-color: #6e6e6e;
+  --primary-color: #1976d2;
+  --sub-primary-color: #004ba0;
+
+  --text-color: #212121;
+  --sub-text-color: #484848;
 
   --transition-time: 0.2s;
 }
@@ -20,4 +23,6 @@ a {
 
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
