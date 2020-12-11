@@ -20,7 +20,7 @@ function Introduction(): JSX.Element {
             rel="noopener noreferrer"
           >
             <FaGithub size={24} />
-            <span>github</span>
+            <span>GitHub</span>
           </a>
           <a
             className={styles.contactAnchor}
@@ -29,7 +29,7 @@ function Introduction(): JSX.Element {
             rel="noopener noreferrer"
           >
             <FaLinkedin size={24} />
-            <span>linkedIn</span>
+            <span>LinkedIn</span>
           </a>
         </div>
       </div>
