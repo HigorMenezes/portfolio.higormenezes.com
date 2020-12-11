@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-import NavigationItem from "../NavigationItem";
+import NavigationItem from "./NavigationItem";
 
 import styles from "./styles.module.scss";
 
