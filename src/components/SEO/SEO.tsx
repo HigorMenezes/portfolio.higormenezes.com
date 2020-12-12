@@ -11,6 +11,13 @@ interface SEOProps {
 function SEO({ title, description, image }: SEOProps): JSX.Element {
   return (
     <Head>
+      <meta charSet="utf-8" />
+      <meta
+        name="viewport"
+        content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+      />
+      <meta name="theme-color" content="#ffffff" />
+
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta property="og:type" content="website" />
@@ -23,12 +30,15 @@ function SEO({ title, description, image }: SEOProps): JSX.Element {
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={`${environment.siteUrl}${image}`} />
 
-      <link rel="apple-touch-icon" sizes="192x192" href="/images/icon.png" />
-      <link rel="apple-touch-icon" sizes="256x256" href="/images/icon.png" />
-      <link rel="apple-touch-icon" sizes="384x384" href="/images/icon.png" />
-      <link rel="apple-touch-icon" sizes="512x512" href="/images/icon.png" />
+      <link
+        rel="apple-touch-icon"
+        sizes="512x512"
+        href="/icons/icon-512x512.png"
+      />
 
       <link rel="shortcut icon" href="/favicon.ico" />
+
+      <link rel="manifest" href="/manifest.json" />
     </Head>
   );
 }
