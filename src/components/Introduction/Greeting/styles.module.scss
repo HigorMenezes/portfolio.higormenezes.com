@@ -1,0 +1,26 @@
+.root {
+  width: fit-content;
+}
+
+.hi {
+  margin: 0;
+  font-size: 48px;
+  color: var(--text-color);
+  animation-delay: 0.25s;
+}
+
+.who {
+  margin: 0;
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--text-color);
+  animation-delay: 0.5s;
+}
+
+.role {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--sub-text-color);
+  animation-delay: 0.75s;
+}
