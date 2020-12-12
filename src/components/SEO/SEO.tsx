@@ -14,7 +14,7 @@ function SEO({ title, description, image }: SEOProps): JSX.Element {
       <meta charSet="utf-8" />
       <meta
         name="viewport"
-        content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+        content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
       />
       <meta name="theme-color" content="#ffffff" />
 
@@ -37,8 +37,6 @@ function SEO({ title, description, image }: SEOProps): JSX.Element {
       />
 
       <link rel="shortcut icon" href="/favicon.ico" />
-
-      <link rel="manifest" href="/manifest.json" />
     </Head>
   );
 }
