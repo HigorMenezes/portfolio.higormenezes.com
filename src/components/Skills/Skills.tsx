@@ -2,13 +2,7 @@ import Link from "next/link";
 
 import styles from "./styles.module.scss";
 
-import {
-  ReactJSIcon,
-  NodeIcon,
-  Html5Icon,
-  JavascriptIcon,
-  Css3Icon,
-} from "../Icons";
+import TechIcons from "../TechIcons";
 import Grade from "../Grade";
 
 function Skills(): JSX.Element {
@@ -24,27 +18,27 @@ function Skills(): JSX.Element {
       <div className={styles.content}>
         <section className={styles.skill}>
           <h3 className={styles.skillName}>Html5</h3>
-          <Html5Icon size={120} />
+          <TechIcons techIconName="Html5Icon" size={120} />
           <Grade grande={5} />
         </section>
         <section className={styles.skill}>
           <h3 className={styles.skillName}>Css3</h3>
-          <Css3Icon size={120} />
+          <TechIcons techIconName="Css3Icon" size={120} />
           <Grade grande={5} />
         </section>
         <section className={styles.skill}>
           <h3 className={styles.skillName}>Javascript</h3>
-          <JavascriptIcon size={120} />
+          <TechIcons techIconName="JavascriptIcon" size={120} />
           <Grade grande={5} />
         </section>
         <section className={styles.skill}>
           <h3 className={styles.skillName}>ReactJS</h3>
-          <ReactJSIcon size={120} />
+          <TechIcons techIconName="ReactJSIcon" size={120} />
           <Grade grande={5} />
         </section>
         <section className={styles.skill}>
           <h3 className={styles.skillName}>NodeJS</h3>
-          <NodeIcon size={120} />
+          <TechIcons techIconName="NodeIcon" size={120} />
           <Grade grande={5} />
         </section>
       </div>
