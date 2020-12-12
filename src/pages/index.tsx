@@ -2,7 +2,7 @@ import SEO from "../components/SEO";
 import Main from "../components/Main";
 import Divider from "../components/Divider";
 import Introduction from "../components/Introduction";
-import Skills from "../components/Skills";
+import MainSkills from "../components/MainSkills";
 
 export default function Home(): JSX.Element {
   return (
@@ -14,7 +14,7 @@ export default function Home(): JSX.Element {
       <Main>
         <Introduction />
         <Divider />
-        <Skills />
+        <MainSkills />
         <Divider />
       </Main>
     </>

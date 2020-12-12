@@ -1,4 +1,4 @@
-interface MainSkills {
+interface Skill {
   id: number;
   name: string;
   icon:
@@ -10,7 +10,7 @@ interface MainSkills {
   grade: number;
 }
 
-const mainSkills: MainSkills[] = [
+const mainSkills: Skill[] = [
   {
     id: 1,
     name: "Html5",
