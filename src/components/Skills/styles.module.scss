@@ -1,0 +1,55 @@
+.root {
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+
+  .title {
+    margin: 0;
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--sub-text-color);
+  }
+
+  .viewAllSkills {
+    position: relative;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+
+    &:focus {
+      outline: thin dotted var(--primary-color);
+    }
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  & > *:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 15px 10px;
+
+  .skillName {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+}
