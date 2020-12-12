@@ -8,7 +8,7 @@ function Navigation(): JSX.Element {
   const { pathname } = useRouter();
 
   return (
-    <nav className={styles.nav}>
+    <nav className={styles.root}>
       <ul>
         <li>
           <NavigationItem href="/" active={pathname === "/"}>

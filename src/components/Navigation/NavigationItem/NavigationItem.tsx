@@ -15,10 +15,10 @@ function NavigationItem({
 }: NavigationItemProps): JSX.Element {
   const className = useMemo(() => {
     if (active) {
-      return `${styles.navigationItem} ${styles.active}`;
+      return `${styles.root} ${styles.active}`;
     }
 
-    return styles.navigationItem;
+    return styles.root;
   }, [active]);
 
   return (

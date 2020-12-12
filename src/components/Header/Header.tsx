@@ -4,8 +4,8 @@ import styles from "./styles.module.scss";
 
 function Header(): JSX.Element {
   return (
-    <header className={styles.header}>
-      <div className={styles.headerContent}>
+    <header className={styles.root}>
+      <div className={styles.content}>
         <Navigation />
       </div>
     </header>

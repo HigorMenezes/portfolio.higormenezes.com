@@ -6,7 +6,7 @@ function Contact(): JSX.Element {
   return (
     <div className={styles.root}>
       <a
-        className={styles.contactAnchor}
+        className={styles.anchor}
         href="https://github.com/HigorMenezes"
         target="_blank"
         rel="noopener noreferrer"
@@ -15,7 +15,7 @@ function Contact(): JSX.Element {
         <span>GitHub</span>
       </a>
       <a
-        className={styles.contactAnchor}
+        className={styles.anchor}
         href="https://www.linkedin.com/in/higor-aparecido-menezes-95ab4a182/"
         target="_blank"
         rel="noopener noreferrer"

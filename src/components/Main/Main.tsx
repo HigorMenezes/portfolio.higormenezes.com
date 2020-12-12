@@ -6,8 +6,8 @@ interface MainProps {
 
 function Main({ children }: MainProps): JSX.Element {
   return (
-    <main className={styles.main}>
-      <div className={styles.mainContent}>{children}</div>
+    <main className={styles.root}>
+      <div className={styles.content}>{children}</div>
     </main>
   );
 }
