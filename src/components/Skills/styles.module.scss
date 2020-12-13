@@ -1,0 +1,44 @@
+.categoryTitle {
+  font-size: 24px;
+  color: var(--sub-text-color);
+  font-weight: 600;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.skillsByCategoryContent {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+@media (min-width: 320px) {
+  .skillsByCategoryContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 460px) {
+  .skillsByCategoryContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 720px) {
+  .skillsByCategoryContent {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 920px) {
+  .skillsByCategoryContent {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1080px) {
+  .skillsByCategoryContent {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
