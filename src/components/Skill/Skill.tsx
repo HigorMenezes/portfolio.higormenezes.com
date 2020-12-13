@@ -1,24 +1,23 @@
-import TechIcons from "../TechIcons";
 import Grade from "../Grade";
 
 import styles from "./styles.module.scss";
 
 interface SkillProps {
   name: string;
-  icon:
-    | "Css3Icon"
-    | "Html5Icon"
-    | "JavascriptIcon"
-    | "NodeJSIcon"
-    | "ReactJSIcon";
+  image: {
+    src: string;
+    alt: string;
+  };
   grade: number;
 }
 
-function Skill({ name, icon, grade }: SkillProps): JSX.Element {
+function Skill({ name, image, grade }: SkillProps): JSX.Element {
   return (
     <section className={styles.root}>
       <h3 className={styles.name}>{name}</h3>
-      <TechIcons techIconName={icon} size={120} />
+      <div className={styles.imageContainer}>
+        <img className={styles.image} src={image.src} alt={image.alt} />
+      </div>
       <Grade grande={grade} />
     </section>
   );

@@ -33,7 +33,7 @@ function SEO({ title, description, image }: SEOProps): JSX.Element {
       <link
         rel="apple-touch-icon"
         sizes="512x512"
-        href="/icons/icon-512x512.png"
+        href="/icons/app/icon-512x512.png"
       />
 
       <link rel="shortcut icon" href="/favicon.ico" />
