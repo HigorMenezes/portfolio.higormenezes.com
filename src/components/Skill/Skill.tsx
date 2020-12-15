@@ -16,7 +16,12 @@ function Skill({ name, image, grade }: SkillProps): JSX.Element {
     <section className={styles.root}>
       <h3 className={styles.name}>{name}</h3>
       <div className={styles.imageContainer}>
-        <img className={styles.image} src={image.src} alt={image.alt} />
+        <img
+          title={name}
+          className={styles.image}
+          src={image.src}
+          alt={image.alt}
+        />
       </div>
       <Grade grande={grade} />
     </section>

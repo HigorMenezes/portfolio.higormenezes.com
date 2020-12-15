@@ -65,7 +65,7 @@ const skills: Skill[] = [
   {
     id: 5,
     name: "GraphQL",
-    category: "Languages",
+    category: "Tools",
     image: {
       src: "/icons/tech/graphql.svg",
       alt: "GraphQL Logo",
