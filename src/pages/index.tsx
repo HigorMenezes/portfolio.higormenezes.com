@@ -3,6 +3,7 @@ import Main from "../components/Main";
 import Divider from "../components/Divider";
 import Introduction from "../components/Introduction";
 import MainSkills from "../components/MainSkills";
+import RecentProjects from "../components/RecentProjects";
 
 export default function Home(): JSX.Element {
   return (
@@ -16,6 +17,7 @@ export default function Home(): JSX.Element {
         <Divider />
         <MainSkills />
         <Divider />
+        <RecentProjects />
       </Main>
     </>
   );
