@@ -1,0 +1,50 @@
+.root {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+
+  border-radius: 10px;
+  overflow: hidden;
+
+  margin: 20px 0px;
+
+  box-shadow: var(--box-shadow-2);
+
+  transition: box-shadow var(--transition-time);
+
+  &:hover {
+    box-shadow: var(--box-shadow-4);
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+
+  .title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+
+  .description {
+    font-size: 16px;
+    color: var(--text-color);
+  }
+
+  .techs {
+    justify-self: flex-end;
+
+    .techImage {
+      max-width: 40px;
+      height: auto;
+    }
+  }
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
+}

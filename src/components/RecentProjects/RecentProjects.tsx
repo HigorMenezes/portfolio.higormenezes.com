@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import ProjectCard from "../ProjectCard";
+
 import styles from "./styles.module.scss";
 
 function RecentProjects(): JSX.Element {
@@ -10,6 +12,9 @@ function RecentProjects(): JSX.Element {
         <Link href="/projects">
           <a className={styles.viewAllProjects}>view all projects</a>
         </Link>
+      </div>
+      <div>
+        <ProjectCard />
       </div>
     </section>
   );
