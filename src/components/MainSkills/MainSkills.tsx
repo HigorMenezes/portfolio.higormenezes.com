@@ -21,7 +21,7 @@ function MainSkills(): JSX.Element {
           <Skill
             key={skill.id}
             name={skill.name}
-            icon={skill.icon}
+            techIcon={skill.techIcon}
             grade={skill.grade}
           />
         ))}

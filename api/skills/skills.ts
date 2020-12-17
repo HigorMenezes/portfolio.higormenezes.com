@@ -1,5 +1,5 @@
 export type Category = "Languages" | "Frameworks" | "Libraries" | "Tools";
-export type Icon =
+export type TechIcon =
   | "css3"
   | "gatsby"
   | "git"
@@ -15,7 +15,7 @@ export interface Skill {
   id: number;
   name: string;
   category: Category;
-  icon: Icon;
+  techIcon: TechIcon;
   grade: number;
 }
 
@@ -24,70 +24,70 @@ const skills: Skill[] = [
     id: 1,
     name: "Html5",
     category: "Languages",
-    icon: "html5",
+    techIcon: "html5",
     grade: 5,
   },
   {
     id: 2,
     name: "Css3",
     category: "Languages",
-    icon: "css3",
+    techIcon: "css3",
     grade: 5,
   },
   {
     id: 3,
     name: "Javascript",
     category: "Languages",
-    icon: "javascript",
+    techIcon: "javascript",
     grade: 5,
   },
   {
     id: 4,
     name: "ReactJS",
     category: "Frameworks",
-    icon: "reactjs",
+    techIcon: "reactjs",
     grade: 5,
   },
   {
     id: 5,
     name: "NodeJS",
     category: "Frameworks",
-    icon: "nodejs",
+    techIcon: "nodejs",
     grade: 5,
   },
   {
     id: 5,
     name: "GraphQL",
     category: "Tools",
-    icon: "graphql",
+    techIcon: "graphql",
     grade: 5,
   },
   {
     id: 6,
     name: "Typescript",
     category: "Languages",
-    icon: "typescript",
+    techIcon: "typescript",
     grade: 4,
   },
   {
     id: 6,
     name: "Git",
     category: "Tools",
-    icon: "git",
+    techIcon: "git",
     grade: 5,
   },
   {
     id: 7,
     name: "NextJS",
     category: "Frameworks",
-    icon: "nextjs",
+    techIcon: "nextjs",
     grade: 3.5,
   },
   {
     id: 8,
     name: "Gatsby",
     category: "Frameworks",
-    icon: "gatsby",
+    techIcon: "gatsby",
     grade: 3.5,
   },
 ];

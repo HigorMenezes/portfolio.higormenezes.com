@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import recentProjects from "../../../api/projects/recentProjects";
+
 import ProjectCard from "../ProjectCard";
 
 import styles from "./styles.module.scss";
@@ -14,7 +16,9 @@ function RecentProjects(): JSX.Element {
         </Link>
       </div>
       <div>
-        <ProjectCard />
+        {recentProjects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
       </div>
     </section>
   );

@@ -36,6 +36,14 @@
 .techs {
   padding: 20px;
 
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  & > *:not(:last-child) {
+    margin-right: 10px;
+  }
+
   .techImage {
     width: 40px;
     height: 100%;

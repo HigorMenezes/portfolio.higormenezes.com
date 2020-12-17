@@ -1,12 +1,10 @@
-import { Icon } from "../../../api/skills/skills";
-
-import styles from "./styles.module.scss";
+import { TechIcon as TechIconType } from "../../../api/skills/skills";
 
 const iconRootPath = "/icons/tech";
 
 interface TechIconProps {
   title: string;
-  icon: Icon;
+  icon: TechIconType;
   size?: number;
 }
 
